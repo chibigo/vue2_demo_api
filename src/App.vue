@@ -1,22 +1,25 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-app>
+    <div id="app">
+      <img alt="Vue logo" src="./assets/logo.png" />
+      <router-view />
+      <!-- <NavBarCompVue/> -->
+    </div>
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+// import NavBarCompVue from './components/NavBarComp.vue';
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  name: "App",
+  components:{
+    // NavBarCompVue
   }
-}
+};
 </script>
 
 <style>
+@import "assets/scss/common.scss";
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
